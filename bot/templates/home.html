@@ -6,11 +6,13 @@
     <title>Home</title>
 </head>
 <body>
-    <h1>Welcome, {{ user_profile.user.username }}!</h1>
+<!--     <h1>Welcome, {{ user_profile.user.username }}!</h1>
     <p>Your current points: {{ user_profile.points }}</p>
     <form action="{% url 'claim_points' %}" method="post">
         {% csrf_token %}
         <button type="submit">Claim Points</button>
-    </form>
+    </form> -->
+    <h1>Welcome, Proceed to claim your point<h1>
+         <button type="submit">Claim Points</button>
 </body>
 </html>
