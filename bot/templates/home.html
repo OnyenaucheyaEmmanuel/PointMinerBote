@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Welcome, {{ user_profile.user.username }}!</h1>
+    <p>Your current points: {{ user_profile.points }}</p>
+    <form action="{% url 'claim_points' %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Claim Points</button>
+    </form>
+</body>
+</html>
