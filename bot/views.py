@@ -16,7 +16,7 @@ TELEGRAM_TOKEN = '7190755231:AAFMaoYCCIGDDyEwlIhYIXOr6rasT6I2Bj8'
 def home(request):
     # user_profile = UserProfile.objects.get_or_create(user=request.user)[0]
     # context = {'user_profile': user_profile}
-    return render(request, 'home.html', context)
+    return render(request, 'home.html')
 
 @login_required
 def claim_points(request):
