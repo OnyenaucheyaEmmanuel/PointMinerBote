@@ -14,8 +14,8 @@ TELEGRAM_TOKEN = '7190755231:AAFMaoYCCIGDDyEwlIhYIXOr6rasT6I2Bj8'
 
 # @login_required
 def home(request):
-    user_profile = UserProfile.objects.get_or_create(user=request.user)[0]
-    context = {'user_profile': user_profile}
+    # user_profile = UserProfile.objects.get_or_create(user=request.user)[0]
+    # context = {'user_profile': user_profile}
     return render(request, 'home.html', context)
 
 @login_required
